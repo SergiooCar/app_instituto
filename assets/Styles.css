@@ -1,0 +1,260 @@
+/* Variables personalizadas */
+:root {
+	--primary-color: #0d6efd;
+	--secondary-color: #6c757d;
+	--success-color: #198754;
+	--danger-color: #dc3545;
+	--warning-color: #ffc107;
+	--info-color: #0dcaf0;
+}
+
+/* Estilos globales */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html, body {
+	height: 100%;
+}
+
+body {
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	background-color: #f8f9fa;
+	color: #333;
+	line-height: 1.6;
+	display: flex;
+	flex-direction: column;
+}
+ 
+.container-fluid {
+	flex: 1;
+	padding: 20px 0;
+}
+
+/* Navbar personalizado */
+.navbar {
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	margin-bottom: 20px;
+}
+
+.navbar-brand {
+	font-size: 1.4rem;
+	font-weight: bold;
+	letter-spacing: 0.5px;
+}
+
+.nav-link {
+	font-weight: 500;
+	transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+	color: #ffc107 !important;
+}
+
+/* Botones */
+.btn {
+	border-radius: 5px;
+	font-weight: 500;
+	transition: all 0.3s ease;
+	padding: 0.5rem 1rem;
+}
+
+.btn:hover {
+	transform: translateY(-2px);
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.btn-sm {
+	padding: 0.25rem 0.75rem;
+	font-size: 0.875rem;
+}
+
+/* Tarjetas */
+.card {
+	border-radius: 8px;
+	border: none;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+	transition: all 0.3s ease;
+	height: 100%;
+}
+
+.card:hover {
+	box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+	transform: translateY(-5px);
+}
+
+.card-title {
+	color: #333;
+	font-weight: 600;
+	margin-bottom: 1rem;
+}
+
+/* Tablas */
+.table {
+	border-collapse: collapse;
+	border-radius: 8px;
+	overflow: hidden;
+}
+
+.table thead {
+	background-color: #343a40;
+}
+
+.table-striped tbody tr:hover {
+	background-color: #f1f3f5;
+}
+
+.table-hover tbody tr:hover {
+	cursor: pointer;
+	background-color: #e9ecef;
+}
+
+/* Formularios */
+.form-control, .form-select {
+	border-radius: 5px;
+	border: 1px solid #dee2e6;
+	transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-control:focus, .form-select:focus {
+	border-color: var(--primary-color);
+	box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
+}
+
+.form-label {
+	font-weight: 500;
+	color: #333;
+	margin-bottom: 0.5rem;
+}
+
+/* Alertas */
+.alert {
+	border-radius: 6px;
+	border: none;
+	padding: 1rem 1.5rem;
+	margin-bottom: 1.5rem;
+}
+
+.alert-danger {
+	background-color: #f8d7da;
+	color: #721c24;
+}
+
+.alert-success {
+	background-color: #d4edda;
+	color: #155724;
+}
+
+.alert-info {
+	background-color: #d1ecf1;
+	color: #0c5460;
+}
+
+.alert-warning {
+	background-color: #fff3cd;
+	color: #856404;
+}
+
+/* Badges */
+.badge {
+	padding: 0.5rem 0.75rem;
+	border-radius: 20px;
+	font-weight: 500;
+	font-size: 0.85rem;
+}
+
+/* Footer */
+footer {
+	background-color: #f8f9fa;
+	border-top: 1px solid #dee2e6;
+	margin-top: auto;
+	padding: 1.5rem 0 !important;
+}
+
+footer p {
+	color: #666;
+	font-size: 0.9rem;
+}
+
+/* Scrollbar personalizado */
+::-webkit-scrollbar {
+	width: 10px;
+}
+
+::-webkit-scrollbar-track {
+	background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #888;
+	border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: #555;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+	.container-fluid {
+		padding: 10px 0;
+	}
+
+	.navbar-brand {
+		font-size: 1.2rem;
+	}
+
+	.btn {
+		padding: 0.4rem 0.8rem;
+		font-size: 0.9rem;
+	}
+
+	.card {
+		margin-bottom: 1rem;
+	}
+
+	.table-responsive {
+		font-size: 0.85rem;
+	}
+}
+
+/* Utilidades */
+.shadow-sm-custom {
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.transition-all {
+	transition: all 0.3s ease;
+}
+
+.text-muted-custom {
+	color: #6c757d;
+	font-size: 0.9rem;
+}
+
+/* Vista etiquetas: mas ancho y accion rapida separada */
+.etiquetas-page {
+	max-width: 1400px;
+	padding-left: 24px;
+	padding-right: 24px;
+}
+
+.etiquetas-table-wrap table {
+	min-width: 1220px;
+}
+
+.acciones-rapidas-form {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	flex-wrap: nowrap;
+}
+
+.acciones-rapidas-form .form-control {
+	min-width: 120px;
+}
+
+
